@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* common */
+body {
+  margin: 0;
+  height: 600px;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  width: calc(100% - 8%);
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 70px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  padding: 4% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  width: calc(100% - 8%);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 0;
+}
+
+header ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header ul a {
+  margin-left: 48px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* mein-visual */
+.mein-visual img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* about */
+#about {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.kakeru-prof {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.kakeru-pic img {
+  margin-top: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 60px;
+  object-fit: cover;
+}
+
+.kakeru-desc {
+  text-align: left;
+  margin-bottom: 0;
+  font-size: .8rem;
+}
+
+/* bicycle */
+#bicycle {
+  text-align: center;
+}
+
+.bicycle-pic {
+  margin-top: 70px;
+}
+
+.bicycle-pic ol {
+  display: flex;
+}
+
+.bicycle-pic ol li {
+  width: 33%;
+  padding: 1%;
+}
+
+.bicycle-pic ol li img {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+footer {
+  margin-top: 120px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* wide-screen */
+@media (max-width: 600px) {
+
+  body {
+    /* background: pink; */
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  header ul a {
+    font-size: 1rem;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  /* about */
+  .kakeru-prof {
+    flex-direction: column;
+  }
+
+  .kakeru-pic img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* bicycle */
+  .bicycle-pic {
+    margin-top: 0;
+  }
+
+  .bicycle-pic ol {
+    flex-direction: column;
+  }
+
+  .bicycle-pic ol li {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
